@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> siblings </title>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <style>
+    .redtext{
+        color: red;
+        font-weight: bold;
+    }
+    </style>
+</head>
+<body>
+    <!-- ul.mylist>li*5 -->
+    <ul class="mylist">
+        <li>list</li>
+        <li>list</li>
+        <li>list</li>
+        <li>list</li>
+        <li>list</li>
+    </ul>
+    <script>
+        $(function(){
+            $(".mylist li").click(function(){
+                $(this).addClass("redtext").siblings().removeClass("redtext")
+            });
+        });
+    </script>
+</body>
+</html>

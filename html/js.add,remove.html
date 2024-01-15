@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> js.add,remove </title>
+    <style>
+        .redtext {
+            color: red;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <p id="red"> 클래스 추가버튼 누르면 내가 빨강으로 </p>
+    <button id="addClassEx">클래스추가</button>
+    <button id="removeClassEx">클래스삭제</button>
+    <script>
+        document.getElementById("addClassEx").addEventListener("click", function () {
+            document.getElementById("red").classList.add("redtext");
+        });
+        
+        document.getElementById("removeClassEx").addEventListener("click", function () {
+            document.getElementById("red").classList.remove("redtext");
+        });
+    </script>
+</body>
+
+</html>
