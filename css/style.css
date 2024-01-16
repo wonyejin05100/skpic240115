@@ -56,7 +56,7 @@ img:hover {
 }
 
 #wrap header .innerHeader {
-    min-width: 1460px;
+/*     min-width: 1460px; */
     width: 95%;
     height: 110px;
     display: flex;
