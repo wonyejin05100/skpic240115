@@ -213,6 +213,7 @@ img:hover {
 
 main {
     position: relative;
+    overflow: hidden;
 }
 
 /* 클릭시 최상단으로 이동 */
